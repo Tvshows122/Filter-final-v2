@@ -29,8 +29,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8
 CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'paisakamalo.in'))
-STREAM_API = (environ.get('STREAM_API', 'de3a6a370de49290db4eea4d1133dd4c189e6579'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'Adrinolinks.in'))
+STREAM_API = (environ.get('STREAM_API', 'cf7d1aad2e284b499245abeaead6f2f38a2b2f74'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/infinitybm'))
 
 # Admins, Channels & Users
