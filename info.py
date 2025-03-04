@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg')
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'paisakamalo.in'))
 STREAM_API = (environ.get('STREAM_API', 'de3a6a370de49290db4eea4d1133dd4c189e6579'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/+_JMZkD2Rej01NTc1'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/infinitybm'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1678791454').split()]
@@ -39,7 +39,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '') #Channel / Group Id for force sub ( make sure bot is admin )
+auth_channel = environ.get('AUTH_CHANNEL', '-1001610459451') #Channel / Group Id for force sub ( make sure bot is admin )
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -62,20 +62,20 @@ VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( F
 HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/+_JMZkD2Rej01NTc1') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'paisakamalo.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'de3a6a370de49290db4eea4d1133dd4c189e6579')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))  # else--> True
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Adrinolinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'cf7d1aad2e284b499245abeaead6f2f38a2b2f74')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))  # else--> True
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+ABt_v5G6AbQ1Yjhl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+t4JOpsND9c44Mzll')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+_JMZkD2Rej01NTc1') # Tutorial video link for opening shortlink website 
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/infinitybm')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/infinitybm')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/infinitybm') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : INFINITY')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001837895467')) #Log channel id ( make sure bot is admin )
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+UxmX6-anwcgzMDJl') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/infinitybm') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
