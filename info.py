@@ -64,7 +64,7 @@ HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/+_JMZkD2Rej01NTc1') # How
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Adrinolinks.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'cf7d1aad2e284b499245abeaead6f2f38a2b2f74')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True),True)  # else--> True
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))  # else--> True
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
